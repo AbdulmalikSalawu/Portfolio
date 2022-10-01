@@ -1,0 +1,161 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* background-color: #0A192F; */
+    background-color: rgb(39, 2, 2);
+}
+.small-nav{
+    display: none;
+}
+.large-nav{
+    visibility: visible;
+    /* background-color: rgb(39, 2, 2) !important; */
+    background-color: rgb(97, 37, 37);
+}
+.nav-link{
+    /* color: #8892b0; */
+    color: rgb(219, 180, 180);
+    font-size: 19px;
+}
+.nav-link:hover{
+    border: thin solid rgb(219, 180, 180);
+    border-radius: 8px;
+}
+ul button{
+    background: none;
+    color: rgb(219, 180, 180);
+    border: thin solid rgb(219, 180, 180);
+    border-radius: 8px;
+    font-size: 19px;
+}
+ul button:hover, .nav-link:hover{
+    background-color: rgb(219, 180, 180);
+    color: rgb(39, 2, 2);
+    font-weight: bold;
+}
+h1{
+    font-size: 80px;
+    color: #ccd6f6;
+}
+h2{
+    color: #8892b0;
+    font-size: 72px;
+}
+.container p{
+    line-height: 37px;
+    letter-spacing: 1px;
+}
+h3{
+    color: rgb(247, 222, 222);
+    font-size: 60px;
+}
+span{
+    color: #4d9e9e;
+    font-size: 22px;
+}
+.mypic{
+    height: 400px;
+    /* width: 400px; */
+    border-radius: 50%;
+}
+.unicolor{
+    color: rgb(219, 180, 180);
+}
+#skills .row{
+    display: flex;
+    justify-content: center;
+}
+.skillsimg{
+    height: 150px;
+    width: 150px;
+}
+
+@media screen and (max-width:800px) {
+    .small-nav{
+        display: block;
+        background-color: rgb(97, 37, 37);
+        padding-bottom: 12px;
+    }
+    .d-md-none{
+        color: rgb(39, 2, 2);
+    }
+    .large-nav{
+        display: none;
+    }
+    .container{
+        width: 89%;
+    }
+    h1{
+        font-size: 36px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    .navbar-toggler{
+        border: medium solid rgb(219, 180, 180);
+        border-radius: 8px;
+    }
+    .navbar-collapse{
+       position: relative;
+       right: 55%;
+    }
+    ul{
+        height: 400px;
+    }
+    ul li a{
+        margin-top: 25%;
+    }
+    ul button{
+        width: 100px;
+        padding: 9px;
+        margin-top: 25%;
+    }
+}
+@media screen and (max-width:560px) {
+    ul{
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        width: 520px;
+        height: 650px;
+    }
+    ul li a{
+        margin-left: 74%;
+        text-align: center;
+        color: rgb(39, 2, 2) !important;
+        margin-top: 45px;
+        font-size: 22px !important;
+        font-weight: bold !important;
+    }
+    ul li a:hover{
+        border: thin solid rgb(39, 2, 2) !important;
+    }
+    ul button{
+        margin-left: 69%;
+        text-align: center;
+        margin-top: 50px;
+        border: thin solid rgb(39, 2, 2);
+        color: rgb(39, 2, 2);
+    }
+    h3{
+        font-size: 38px;
+    }
+    .mypic{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+    }
+    .skillsimg{
+        height: 80px;
+        width: 100px;
+    }
+}
+@media screen and (min-width: 900px) {
+    .container div{
+        height: 83vh;
+    }
+    
+}
