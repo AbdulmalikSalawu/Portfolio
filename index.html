@@ -11,7 +11,7 @@
 </head>
   <body id="body">
 
-    <nav class="navbar navbar-expand-lg sticky-top py-3 container-fluid shadow-lg large-nav">
+    <nav class="navbar navbar-expand-lg sticky-top py-2 container-fluid shadow-lg large-nav">
       <div class="container-fluid">
         <a class="navbar-brand ps-5" href="#"></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -37,7 +37,7 @@
       </div>
     </nav>
 
-    <nav class="navbar navbar-expand-lg mt- sticky-top container-fluid shadow small-nav">
+    <nav class="navbar navbar-expand-lg sticky-top container-fluid shadow small-nav">
       <div class="container-fluid">
         <a class="navbar-brand ps-5" href="#"></a>
         <button class="navbar-toggler" onclick="navToggler()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +57,7 @@
         <p class="unicolo text-white ms-lg-5 fs-4 mt-5">Hi, my name is </p>
         <h1 class=" ms-lg-5 mt-1 text-whit unicolor">Abdulmalik Salawu.</h1>
         <h2 class="ms-lg-5 text-white unicolo">I build things for the web.</h2>
-        <p class="ms-lg-5 fs-4 unicolor">I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at </p>
+        <p class="ms-lg-5 fs-4 unicolor description">I’m a fullstack developer, who is specialized in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, interactive, and  <span class="fs-3"> user-centered</span> applications on the web.</p>
       </div>
     </div>
   </section>
@@ -67,21 +67,99 @@
       <div class="row">
         <div class="col-sm-12 col-md-7 ms-lg-5 mt-lg-4">
           <h3 class="unicolo ms- fw-bol mt-5">About me</h3><hr class="bg-white">
-          <p class="unicolor fs-5">Hello! My name is <span class="fs-4"> Abdulmalik</span>, and I enjoy creating things that live on the internet. My interest in web development started back in 2021 when I saw eye-catching website structures and designs  — turns out having a Computer Science student as a roomie taught me a lot about <span> HTML & CSS!</span></p>
-          <p class="unicolor fs-5">Over the past few months, I have made a smooth learning transition from Biochemistry to fullstack development. My passion for technology also facilitated the switch. Fast-forward to today, and I'm currently a Level 3 student @ <span> SQI College of ICT</span> in Oyo, Nigeria.</p>
-          <p class="unicolor fs-5 mb-5">I'm currently open to internship, junior frontend roles and also freelance work</p>
+          <p class="unicolor fs-4">Hello! My name is <span class="fs-3"> Abdulmalik</span>, and I enjoy creating things that live on the internet. My interest in web development started back in 2021 when I saw eye-catching website structures and designs  — turns out having a Computer Science student as a roomie taught me a lot about <span> HTML & CSS!</span></p>
+          <p class="unicolor fs-4">Over the past few months, I have made a smooth learning transition from Biochemistry to fullstack development. My passion for technology also facilitated the switch. Fast-forward to today, and I'm currently a Level 3 student @ <span> SQI College of ICT</span> in Oyo, Nigeria.</p>
+          <p class="unicolor fs-4 mb-5">I'm currently open to internship, junior frontend roles and also freelance work</p>
         </div>
-          <img class="col-sm-10 col-md-4 mt-5 mypic" src="IMG_20220930_094106_635.jpg" alt="">
+          <img class="col-sm-10 col-md-4 mt-lg-5 mypic" src="IMG_20220930_094106_635.jpg" alt="">
       </div>
     </section>
 
-    <section id="skills" class="container mt-5">
-      <h3 class="unicolor ms-lg-5 mt-lg-5">Skills</h3><hr class="bg-white">
-        <div class="row mt-2">
-            <img src="html_icon-removebg-preview.png" class="col-sm-6 col-lg-1 col-lg-3 skillsimg" alt="">
-            <img src="css_icon-removebg-preview.png" class="col-sm-6 col-lg-1 col-lg-3 skillsimg" alt="">
-            <img src="js_icon-removebg-preview.png" class="col-sm-6 col-lg-1 col-lg-3 skillsimg" alt="">
-            <img src="react icon.jpg" class="col-sm-6 col-lg-3 col-lg-3 skillsimg" alt="">
+    <section id="skills" class="container mt-5 d-none d-md-block">
+       <h3 class="unicolor ms-5 mt-5">Skills</h3><hr class="w-50 ms-5">
+       <div class="row mt-5 imgcont">
+        <div class="col-md-3 col-lg-3 ms-5">
+          <img src="html_icon-removebg-preview.png" class="skillsimg "  alt="">
+          <p class="ms-5 fs-4 unicolor">HTML</p>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <img src="css_icon-removebg-preview.png" class="skillsimg"  alt="">
+          <p class="ms-5 fs-4 unicolor">CSS</p>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <img src="js_icon-removebg-preview.png" class="skillsimg"  alt="">
+          <p class="ms-2 unicolor fs-4">JAVASCRIPT</p>
+        </div>
+        <div class="col-md-4 col-lg-1">
+          <img src="react_icon-removebg-preview.png" class="skillsimg" alt="">
+          <p class="ms-5 unicolor fs-4">REACT</p>
+        </div>
+       </div>
+
+       <div class="row">
+        <div class="col-md-4 col-lg-3 ms-5">
+          <img src="firebase_icon-removebg-preview.png" class="skillsimg "  alt="">
+          <p class="ms-5 fs-4 unicolor">FIREBASE</p>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <img src="git_icon-removebg-preview.png" class="skillsimg"  alt="">
+          <p class="ms-5 fs-4 unicolor">GIT</p>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <img src="rwdicon.jpg" class="skillsimg"  alt="">
+          <p class="ms-2 unicolor fs-4">RESPONSIVE</p>
+        </div>
+        <div class="col-md-4 col-lg-1">
+          <img src="bootstrapicon-removebg-preview.png" class="skillsimg" alt="">
+          <p class="ms-2 unicolor fs-4">BOOTSTRAP</p>
+        </div>
+       </div>
+    </section>
+
+    <section id="skills" class="container mt-5 d-md-none">
+      <h3 class="unicolor ms-3">Skills</h3><hr class="bg-white">
+        <div class="row mt-lg-4 ">
+          <div class="flexbox">
+            <div class="col-sm-4 col-lg-3">
+              <img src="html_icon-removebg-preview.png" class="skillsimg mt-2 ms-2"  alt="">
+              <p class="fs-5">HTML</p>
+            </div>
+            <div class="col-sm-4 col-lg-1 col-lg-3 ">
+              <img src="css_icon-removebg-preview.png" class="cssicon"  alt="">
+              <p class="fs-5">CSS</p>
+            </div>
+          </div>
+          <div class="flexbox">
+            <div class="col-sm-6 col-lg-1 col-lg-3">
+              <img src="js_icon-removebg-preview.png" class=" skillsimg"  alt="">
+              <p>JAVASCRIPT</p>
+            </div>
+            <div class="col-sm-6 col-lg-1 col-lg-3">
+              <img src="react_icon-removebg-preview.png" class=" skillsimg me-3"  alt="">
+              <p>REACT</p>
+            </div>
+        </div>
+
+        <div class="row mt-lg-4 ">
+          <div class="flexbox">
+            <div class="col-sm-4 col-lg-1 col-lg-3 ">
+              <img src="bootstrapicon-removebg-preview.png" class="cssicon w-75 me-4"  alt="">
+              <p class="fs-5">BOOTSTRAP</p>
+            </div>
+            <div class="col-sm-4 col-lg-3">
+              <img src="firebase_icon-removebg-preview.png" class="skillsimg mt-2 me-3"  alt="">
+              <p class="fs-5">FIREBASE</p>
+            </div>
+          </div>
+          <div class="flexbox">
+            <div class="col-sm-6 col-lg-1 col-lg-3">
+              <img src="rwdicon.jpg" class=" skillsimg me-2"  alt="">
+              <p>RESPONSIVE</p>
+            </div>
+            <div class="col-sm-6 col-lg-1 col-lg-3">
+              <img src="git_icon-removebg-preview.png" class=" skillsimg me-3"  alt="">
+              <p>GIT</p>
+            </div>
         </div>
     </section>
 

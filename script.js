@@ -8,7 +8,7 @@ function navlink2(){
         mylinks.style.display = "none"
    }
 }
- function navlink3(){
+function navlink3(){
     if(mylinks.style.display = "block"){
         mylinks.style.display = "none"
    }
@@ -25,7 +25,7 @@ const navToggler=()=>{
         <a onclick="navlink()" id="disp" href="#about" class="nav-link ">About</a>
       </li>
       <li class="nav-item me-5">
-        <a onclick="navlink3()" href ="#skills" class="nav-link">Skills</a>
+        <a onclick="navlink3()" href="#skills" class="nav-link ">Skills</a>
       </li>
       <li class="nav-item me-5">
         <a  href="" class="nav-link">Projects</a>
