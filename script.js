@@ -13,6 +13,11 @@ function navlink3(){
         mylinks.style.display = "none"
    }
 }
+function navlink4(){
+    if(mylinks.style.display = "block"){
+        mylinks.style.display = "none"
+   }
+}
 
 const navToggler=()=>{
     mylinks.style.display = "block"
@@ -25,16 +30,17 @@ const navToggler=()=>{
         <a onclick="navlink()" id="disp" href="#about" class="nav-link ">About</a>
       </li>
       <li class="nav-item me-5">
-        <a onclick="navlink3()" href="#skills" class="nav-link ">Skills</a>
+        <a onclick="navlink3()" href="#myskills" class="nav-link ">Skills</a>
       </li>
       <li class="nav-item me-5">
-        <a  href="" class="nav-link">Projects</a>
+        <a onclick="navlink4()" href="#projects" class="nav-link">Projects</a>
       </li>
       <li class="nav-item me-5">
         <a class="nav-link">Contact</a>
       </li>
-      <button class = " px-3">Resume</button>
+      <button class = "px-3">Resume</button>
     </ul>
     `
-    mylinks.style.background = "rgb(185, 132, 132)"
+
+    // mylinks.style.background = "rgb(185, 132, 132)"
 }

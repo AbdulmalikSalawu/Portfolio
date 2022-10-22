@@ -18,12 +18,12 @@ hr{
 .large-nav{
     visibility: visible;
     /* background-color: rgb(39, 2, 2) !important; */
-    background-color: rgb(97, 37, 37);
+    background-color: rgb(102, 39, 39);
 }
 .nav-link{
     /* color: #8892b0; */
     color: white;
-    font-size: 21px;
+    font-size: 20px;
 }
 .nav-link:hover{
     border: thin solid rgb(219, 180, 180);
@@ -42,13 +42,38 @@ ul button:hover, .nav-link:hover{
     color: rgb(39, 2, 2);
     font-weight: bold;
 }
+hr{
+    background-color: rgb(211, 150, 150);
+}
 h1{
     font-size: 80px;
     color: #ccd6f6;
+    animation-name: slide;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+.hi{
+    animation-name: slide;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
 }
 h2{
     color: #8892b0;
     font-size: 72px;
+}
+.projectimg{
+    height: 170px;
+    width: 300px;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(65px)
+    }
 }
 .container p{
     line-height: 42px;
@@ -57,17 +82,20 @@ h2{
 h3{
     color: rgb(247, 222, 222);
     font-size: 60px;
+    animation-name: slide;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
 }
 span{
     color: #4d9e9e;
     font-size: 22px;
 }
 .mypic{
-    height: 420px;
-    /* width: 400px; */
+    height: 450px;
     border-radius: 50%;
     position: relative;
-    top: 10px;
+    top: 100px;
 }
 .unicolor{
     color: rgb(219, 180, 180);
@@ -80,11 +108,25 @@ span{
     height: 150px;
     width: 150px;
 }
+.d-md-flex{
+    border: 5px solid rgb(155, 74, 74);
+    padding: 40px 20px 40px 30px;
+    height: 80vh !important;
+    color: #4d9e9e;
+}
+.col-6{
+    height: 20vh;
+}
+.livesite{
+    background-color: rgb(226, 198, 198);
+    border-radius: 6px;
+    border: none;
+}
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
     .small-nav{
         display: block;
-        background-color: rgb(97, 37, 37);
+        background-color: rgb(155, 74, 74);
         padding-bottom: 12px;
     }
     .d-md-none{
@@ -98,13 +140,13 @@ span{
         /* text-align: center; */
     }
     h1{
-        font-size: 36px;
+        font-size: 33px;
     }
     h2{
-        font-size: 32px;
+        font-size: 29px;
     }
     .navbar-toggler{
-        border: medium solid rgb(219, 180, 180);
+        border: medium solid rgb(150, 72, 72);
         border: medium solid rgb(39, 2, 2);
         border-radius: 8px;
     }
@@ -126,10 +168,11 @@ span{
 }
 @media screen and (max-width:760px) {
     ul{
-        border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px;
-        width: 520px;
-        height: 630px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 500px;
+        height: 620px;
+        background-color: rgb(182, 101, 101);
     }
     ul li a{
         margin-left: 74%;
@@ -156,6 +199,8 @@ span{
         height: 330px;
         width: 350px;
         border-radius: 50%;
+        position: relative;
+        top: -20px;
     }
     .skillsimg{
         height: 90px;
@@ -172,7 +217,55 @@ span{
     .flexbox div p{
         color: #4d9e9e;
     }
+    #projects div{
+        width: 98%;
+    }
+    #projects h3{
+        margin-top: 15vh;
+    }
+    .nav-link, .px-3{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px !important;
+        animation-name: slide;
+        animation-duration: 1.2s;
+        animation-iteration-count: 1;
+        /* animation-direction: normal; */
+        animation-timing-function: ease-out;
+        color: rgb(15, 0, 0) !important;
+    }
+    .d-md-flex{
+        width: 100% !important;
+        margin: auto;
+        margin-left: 20px !important;
+    }
+    @keyframes slide {
+        0% {
+            transform: translateX(-10px);
+        }
+        50% {
+            transform: translateX(55px)
+        }
+    }
 }
+
+@media screen and (max-width: 550px) {
+    .d-md-flex{
+        border: 3px solid rgb(150, 72, 72);
+        height: 67vh !important;
+    }
+    .projectimg{
+        width: 97%;
+    }
+    .projectdetails{
+        font-size: 17px !important;
+        line-height: 37px !important;
+    }
+    /* .skillsimg, .cssicon{
+        height: 70px !important;
+        width: 70px;
+    } */
+}
+
 @media screen and (min-width: 900px) {
     .container div{
         height: 105vh;
@@ -180,5 +273,19 @@ span{
     .imgcont{
         height: 36vh !important;
     }
-    
+    #myskills{
+        margin-top: 150px !important;
+    }
+}
+
+@media screen and (min-width:900px) and (max-width:1050px) {
+    .container div{
+        height: 120vh;
+    }
+    .issue{
+        height: 200vh !important;
+    }
+    #projects{
+        margin-top: -100px !important;
+    }
 }

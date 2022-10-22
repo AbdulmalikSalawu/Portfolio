@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
     <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
   <body id="body">
 
-    <nav class="navbar navbar-expand-lg sticky-top py-2 container-fluid shadow-lg large-nav">
+    <nav class="navbar navbar-expand-lg sticky-top py-2 container-fluid shadow-lg large-nav ">
       <div class="container-fluid">
         <a class="navbar-brand ps-5" href="#"></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -26,21 +26,21 @@
               <a  href="#skills" class="nav-link">Skills</a>
             </li>
             <li class="nav-item me-5">
-              <a  href="" class="nav-link">Project</a>
+              <a  href="#projects" class="nav-link">Project</a>
             </li>
             <li class="nav-item me-5">
               <a class="nav-link">Contact</a>
             </li>
-            <button class = "px-3">Resume</button>
+            <button class = "px-3 mt-1">Resume</button>
           </ul>
         </div>
       </div>
     </nav>
 
-    <nav class="navbar navbar-expand-lg sticky-top container-fluid shadow small-nav">
+    <nav class="navbar navbar-expand-lg sticky-top container-fluid shadow small-nav " id="smallnav">
       <div class="container-fluid">
         <a class="navbar-brand ps-5" href="#"></a>
-        <button class="navbar-toggler" onclick="navToggler()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler mt-" id="mytoggler" onclick="navToggler()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -51,118 +51,150 @@
     </nav>
 
     <section id="home" class="mt-3">
-      <p class="d-md-none"> Lorem ipsum dolor sit amet consectetur,  </p>
+      <p class="d-md-none"> Lorem ipsum dolor sit  </p>
     <div class="container">
       <div class="col-lg-9">
-        <p class="unicolo text-white ms-lg-5 fs-4 mt-5">Hi, my name is </p>
+        <p class="unicolo text-white ms-lg-5 fs-4 mt-5 hi">Hi, my name is </p>
         <h1 class=" ms-lg-5 mt-1 text-whit unicolor">Abdulmalik Salawu.</h1>
         <h2 class="ms-lg-5 text-white unicolo">I build things for the web.</h2>
-        <p class="ms-lg-5 fs-4 unicolor description">I’m a fullstack developer, who is specialized in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, interactive, and  <span class="fs-3"> user-centered</span> applications on the web.</p>
+        <p class="ms-lg-5 fs-4 unicolor description">I’m a fullstack developer, who is specialized in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, interactive, and  <span class="fs-3"> user-centered applications</span> on the web.</p>
       </div>
     </div>
   </section>
 
-    <section id="about" class="container mt-5">
+    <section id="about" class="container mt-5 issue">
       <p class="d-md-none"> Lorem ipsum dolor sit amet consectetur,  </p>
       <div class="row">
-        <div class="col-sm-12 col-md-7 ms-lg-5 mt-lg-4">
+        <div class="col-sm-12 col-md-6 ms-lg-5 mt-lg-4">
           <h3 class="unicolo ms- fw-bol mt-5">About me</h3><hr class="bg-white">
-          <p class="unicolor fs-4">Hello! My name is <span class="fs-3"> Abdulmalik</span>, and I enjoy creating things that live on the internet. My interest in web development started back in 2021 when I saw eye-catching website structures and designs  — turns out having a Computer Science student as a roomie taught me a lot about <span> HTML & CSS!</span></p>
-          <p class="unicolor fs-4">Over the past few months, I have made a smooth learning transition from Biochemistry to fullstack development. My passion for technology also facilitated the switch. Fast-forward to today, and I'm currently a Level 3 student @ <span> SQI College of ICT</span> in Oyo, Nigeria.</p>
-          <p class="unicolor fs-4 mb-5">I'm currently open to internship, junior frontend roles and also freelance work</p>
+          <p class="unicolor fs-5">Hello! My name is <span class="fs-3"> Abdulmalik</span>, and I enjoy creating things that live on the internet. My interest in web development started back in 2021 when I saw eye-catching website structures and designs  — turns out having a Computer Science student as a roomie taught me a lot about <span class="fs-3"> HTML & CSS!</span></p>
+          <p class="unicolor fs-5">Over the past few months, I have made a smooth learning transition from Biochemistry to fullstack development. My passion for technology also facilitated the switch. Fast-forward to today, and I'm currently a Level 3 student @ <span class="fs-3"> SQI College of ICT</span> in Oyo, Nigeria.</p>
+          <p class="unicolor fs-5 mb-5">I'm currently open to internship, junior frontend roles and also freelance work</p>
         </div>
-          <img class="col-sm-10 col-md-4 mt-lg-5 mypic" src="IMG_20220930_094106_635.jpg" alt="">
+          <img class="col-sm-10 col-md-5 mt-lg-5 mypic" src="IMG_20220930_094106_635.jpg" alt="">
       </div>
     </section>
 
     <section id="skills" class="container mt-5 d-none d-md-block">
        <h3 class="unicolor ms-5 mt-5">Skills</h3><hr class="w-50 ms-5">
        <div class="row mt-5 imgcont">
-        <div class="col-md-3 col-lg-3 ms-5">
+        <div class="col-md-3 col-lg-3">
           <img src="html_icon-removebg-preview.png" class="skillsimg "  alt="">
           <p class="ms-5 fs-4 unicolor">HTML</p>
         </div>
-        <div class="col-md-4 col-lg-3">
-          <img src="css_icon-removebg-preview.png" class="skillsimg"  alt="">
+        <div class="col-md-3 col-lg-3">
+          <img src="css_icon-removebg-preview.png" class="skillsimg cssimg"  alt="">
           <p class="ms-5 fs-4 unicolor">CSS</p>
         </div>
-        <div class="col-md-4 col-lg-3">
+        <div class="col-md-3 col-lg-3">
           <img src="js_icon-removebg-preview.png" class="skillsimg"  alt="">
           <p class="ms-2 unicolor fs-4">JAVASCRIPT</p>
         </div>
-        <div class="col-md-4 col-lg-1">
+        <div class="col-md-3 col-lg-1">
           <img src="react_icon-removebg-preview.png" class="skillsimg" alt="">
           <p class="ms-5 unicolor fs-4">REACT</p>
         </div>
        </div>
 
        <div class="row">
-        <div class="col-md-4 col-lg-3 ms-5">
+        <div class="col-md-3 col-lg-3">
           <img src="firebase_icon-removebg-preview.png" class="skillsimg "  alt="">
           <p class="ms-5 fs-4 unicolor">FIREBASE</p>
         </div>
-        <div class="col-md-4 col-lg-3">
+        <div class="col-md-3 col-lg-3">
           <img src="git_icon-removebg-preview.png" class="skillsimg"  alt="">
           <p class="ms-5 fs-4 unicolor">GIT</p>
         </div>
-        <div class="col-md-4 col-lg-3">
+        <div class="col-md-3 col-lg-3">
           <img src="rwdicon.jpg" class="skillsimg"  alt="">
           <p class="ms-2 unicolor fs-4">RESPONSIVE</p>
         </div>
-        <div class="col-md-4 col-lg-1">
-          <img src="bootstrapicon-removebg-preview.png" class="skillsimg" alt="">
+        <div class="col-md-3 col-lg-1">
+          <img src="bootstrapicon-removebg-preview.png" class="skillsimg cssimg" alt="">
           <p class="ms-2 unicolor fs-4">BOOTSTRAP</p>
         </div>
        </div>
     </section>
 
-    <section id="skills" class="container mt-5 d-md-none">
+    <section id="myskills" class="container mt-5 d-md-none">
       <h3 class="unicolor ms-3">Skills</h3><hr class="bg-white">
         <div class="row mt-lg-4 ">
           <div class="flexbox">
             <div class="col-sm-4 col-lg-3">
-              <img src="html_icon-removebg-preview.png" class="skillsimg mt-2 ms-2"  alt="">
-              <p class="fs-5">HTML</p>
+              <img src="html_icon-removebg-preview.png" class="skillsimg mt-2 ms-"  alt="">
+              <p class="fs-5 ms-4">HTML</p>
             </div>
-            <div class="col-sm-4 col-lg-1 col-lg-3 ">
+            <div class="col-sm-4 col-lg-1 col-lg-3">
               <img src="css_icon-removebg-preview.png" class="cssicon"  alt="">
-              <p class="fs-5">CSS</p>
+              <p class="fs-5 ms-5">CSS</p>
             </div>
           </div>
           <div class="flexbox">
-            <div class="col-sm-6 col-lg-1 col-lg-3">
+            <div class="col-sm-6 col-lg-1 col-lg-">
               <img src="js_icon-removebg-preview.png" class=" skillsimg"  alt="">
-              <p>JAVASCRIPT</p>
+              <p class="fs-5">JAVASCRIPT</p>
             </div>
-            <div class="col-sm-6 col-lg-1 col-lg-3">
+            <div class="col-sm-6 col-lg-1 col-lg-">
               <img src="react_icon-removebg-preview.png" class=" skillsimg me-3"  alt="">
-              <p>REACT</p>
+              <p class="fs-5 ms-3">REACT</p>
             </div>
         </div>
 
         <div class="row mt-lg-4 ">
           <div class="flexbox">
-            <div class="col-sm-4 col-lg-1 col-lg-3 ">
-              <img src="bootstrapicon-removebg-preview.png" class="cssicon w-75 me-4"  alt="">
+            <div class="col-sm-4 col-lg-1 col-lg-3">
+              <img src="bootstrapicon-removebg-preview.png" class="cssicon w-75 ms-3"  alt="">
               <p class="fs-5">BOOTSTRAP</p>
             </div>
             <div class="col-sm-4 col-lg-3">
-              <img src="firebase_icon-removebg-preview.png" class="skillsimg mt-2 me-3"  alt="">
-              <p class="fs-5">FIREBASE</p>
+              <img src="firebase_icon-removebg-preview.png" class="skillsimg mt-2 ms-3"  alt="">
+              <p class="fs-5 ms-4">FIREBASE</p>
             </div>
           </div>
           <div class="flexbox">
             <div class="col-sm-6 col-lg-1 col-lg-3">
               <img src="rwdicon.jpg" class=" skillsimg me-2"  alt="">
-              <p>RESPONSIVE</p>
+              <p class="fs-5">RESPONSIVE</p>
             </div>
             <div class="col-sm-6 col-lg-1 col-lg-3">
-              <img src="git_icon-removebg-preview.png" class=" skillsimg me-3"  alt="">
-              <p>GIT</p>
+              <img src="git_icon-removebg-preview.png" class=" skillsimg me-"  alt="">
+              <p class="ms-4 fs-5">GIT</p>
             </div>
         </div>
     </section>
 
+    <section id="projects">
+      <h3 class="unicolor ms-md-5 ps-4">Projects</h3><div class="ms-5"><hr class=" w-50 ms-lg-4"></div>
+      <div class="row container mt-5 ms-lg-5">
+        <div class="col-sm-10 col-md-12 col-lg-11 ms-md-5 fs-4 m-auto d-md-flex">
+            <div class="col-md-6">
+                <img class="projectimg" src="printisnap.PNG" alt="">
+            </div>
+            <div class="col-6 ">
+              <h4 class="fs-2 mt-3">Business Landing Page</h4>
+                <p class="unicolor fs-5 projectdetails
+                ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil perferendis rerum assumenda dicta repellendus, laborum labore provident blanditiis neque at, necessitatibus reiciendis doloribus illo odio error tempore id maxime maiores.</p>
+                  <button class="col-5 livesite"><a class="text-decoration-none text-black" href=""> Live Site</a></button> 
+                  <button class="col-5 livesite"><a class="text-decoration-none text-black" href="">Repo</a></button>
+            </div>
+        </div>
+      </div>
+
+      <div class="row container mt-5 ms-lg-5">
+        <div class="col-sm-10 col-md-12 col-lg-11 ms-md-5 fs-4 m-auto d-md-flex">
+            <div class="col-md-6">
+                <img class="projectimg" src="printisnap.PNG" alt="">
+            </div>
+            <div class="col-6 ">
+              <h4 class="fs-2 mt-3">Business Landing Page</h4>
+                <p class="unicolor fs-5 projectdetails
+                ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil perferendis rerum assumenda dicta repellendus, laborum labore provident blanditiis neque at, necessitatibus reiciendis doloribus illo odio error tempore id maxime maiores.</p>
+                  <button class="col-5 livesite"><a class="text-decoration-none text-black" href=""> Live Site</a></button> 
+                  <button class="col-5 livesite"><a class="text-decoration-none text-black" href="">Repo</a></button>
+            </div>
+        </div>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
