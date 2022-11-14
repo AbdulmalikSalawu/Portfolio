@@ -23,7 +23,14 @@ function navlink5(){
         mylinks.style.display = "none"
    }
 }
-
+function navlink6(){
+    if(mylinks.style.display = "block"){
+        mylinks.style.display = "none"
+   }
+}
+function printivo(){
+    alert("in progress ...")
+}
 
 const navToggler=()=>{
     mylinks.style.display = "block"
@@ -44,7 +51,9 @@ const navToggler=()=>{
       <li class="nav-item me-5">
         <a onclick="navlink5()" href="#contact" class="nav-link">Contact</a>
       </li>
-      <button onclick="myResume" class = "px-3">Resume</button>
+      <li class="nav-item me-5">
+        <a onclick="navlink6()" href="#socials" class="nav-link">Socials</a>
+      </li>
     </ul>
     `
 

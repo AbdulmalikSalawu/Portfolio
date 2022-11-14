@@ -7,6 +7,7 @@ html{
 body{
     /* background-color: #0A192F; */
     background-color: rgb(39, 2, 2);
+    overflow-x: hidden !important;
 }
 hr{
     background-color: white;
@@ -55,7 +56,7 @@ h1{
 }
 .hi{
     animation-name: slide;
-    animation-duration: 1.2s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
 }
@@ -69,10 +70,13 @@ h2{
 }
 @keyframes slide {
     0% {
-        transform: translateX(-10px);
+        transform: translateX(-30px);
     }
     50% {
-        transform: translateX(65px)
+        transform: translateX(105px)
+    }
+    75% {
+        transform: translateX(40px);
     }
 }
 .container p{
@@ -107,6 +111,12 @@ span{
 .skillsimg{
     height: 150px;
     width: 150px;
+    
+}
+.skillsimg, .cssicon{
+    animation-name: scaler;
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
 }
 .d-md-flex{
     border: 5px solid rgb(155, 74, 74);
@@ -119,7 +129,8 @@ span{
 }
 .livesite{
     background-color: rgb(226, 198, 198);
-    border-radius: 6px;
+    border-radius: 10px;
+    height: 48px;
     border: none;
 }
 input{
@@ -132,19 +143,40 @@ textarea{
     background-color: rgb(240, 211, 211);
     border-radius: 10px;
 }
+.checkout{
+    color: #4d9e9e ;
+}
 .submitbtn{
-    background-color: #043939 !important;
+    background-color: #042828 ;
     color: rgb(222, 207, 207);
-    /* color: rgb(39, 2, 2); */
     font-family: 'Times New Roman', Times, serif;
     border: thin solid rgb(219, 180, 180);
     border-radius: 18px;
+    animation-name: scale;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes scale {
+    from {
+        transform: scale(75%);
+    }
+    to {
+        transform: scale(100%);
+    }
+}
+@keyframes scaler {
+    from {
+        transform: scale(50%);
+    }
+    to {
+        transform: scale(100%);
+    }
 }
 @media screen  and (max-width: 1000px) {
     .small-nav{
         display: block;
-        background-color: rgb(155, 74, 74);
-        padding-bottom: 12px;
+        background-color: rgb(230, 185, 185);
+        padding-bottom: 3px;
     }
     .large-nav{
         display: none;
@@ -168,7 +200,6 @@ textarea{
 
 
 @media screen and (max-width:900px) {
-    
     .d-md-none{
         color: rgb(39, 2, 2);
     }
@@ -208,15 +239,15 @@ textarea{
     ul{
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
-        width: 520px;
-        height: 620px;
+        width: 500px;
+        height: 700px;
         background-color: rgb(182, 101, 101);
     }
     ul li a{
         margin-left: 74%;
         text-align: center;
         color: rgb(39, 2, 2) !important;
-        margin-top: 45px;
+        margin-top: 55px;
         font-size: 24px !important;
         font-weight: bold !important;
     }
@@ -224,7 +255,7 @@ textarea{
         border: thin solid rgb(39, 2, 2) !important;
     }
     ul button{
-        margin-left: 69%;
+        margin-left: 71%;
         text-align: center;
         margin-top: 50px;
         border: thin solid rgb(39, 2, 2);
@@ -289,9 +320,13 @@ textarea{
 @media screen and (max-width: 550px) {
     .d-md-flex{
         border: 3px solid rgb(150, 72, 72);
-        height: 75vh !important;
+        height: 102vh !important;
         width: 97% !important;
         margin: auto;
+    }
+    .hi, .text-whit{
+        position: relative;
+        bottom: 50px;
     }
     .projectimg{
         width: 97%;
@@ -310,6 +345,10 @@ textarea{
         border-radius: 20px;
     }
     textarea{border-radius: 8px !important;}
+    .socialsimg{
+        width: 120px !important;
+        height: 120px;
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -336,8 +375,14 @@ textarea{
     }
 }
 @media screen and (max-width: 350px) {
+    .small-nav{
+        width: 100%;
+    }
+    ul{
+        width: 400px;
+    }
     .d-md-flex{
-        height: 71vh !important;
+        height: 97vh !important;
         line-height: 50px;
     }
      .projectdetails{
