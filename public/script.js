@@ -18,6 +18,12 @@ function navlink4(){
         mylinks.style.display = "none"
    }
 }
+function navlink5(){
+    if(mylinks.style.display = "block"){
+        mylinks.style.display = "none"
+   }
+}
+
 
 const navToggler=()=>{
     mylinks.style.display = "block"
@@ -36,9 +42,9 @@ const navToggler=()=>{
         <a onclick="navlink4()" href="#projects" class="nav-link">Projects</a>
       </li>
       <li class="nav-item me-5">
-        <a class="nav-link">Contact</a>
+        <a onclick="navlink5()" href="#contact" class="nav-link">Contact</a>
       </li>
-      <button class = "px-3">Resume</button>
+      <button onclick="myResume" class = "px-3">Resume</button>
     </ul>
     `
 

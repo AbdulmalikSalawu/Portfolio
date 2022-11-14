@@ -122,19 +122,57 @@ span{
     border-radius: 6px;
     border: none;
 }
-
-@media screen and (max-width:900px) {
+input{
+    background-color: rgb(240, 211, 211);
+    border: thin solid white;
+    border-radius: 10px;
+}
+textarea{
+    height: 25vh;
+    background-color: rgb(240, 211, 211);
+    border-radius: 10px;
+}
+.submitbtn{
+    background-color: #043939 !important;
+    color: rgb(222, 207, 207);
+    /* color: rgb(39, 2, 2); */
+    font-family: 'Times New Roman', Times, serif;
+    border: thin solid rgb(219, 180, 180);
+    border-radius: 18px;
+}
+@media screen  and (max-width: 1000px) {
     .small-nav{
         display: block;
         background-color: rgb(155, 74, 74);
         padding-bottom: 12px;
     }
-    .d-md-none{
-        color: rgb(39, 2, 2);
-    }
     .large-nav{
         display: none;
     }
+    ul{
+        height: 600px;
+        
+    }
+    ul li a{
+        margin-top: 25%;
+        color: rgb(39, 2, 2) !important;
+        font-weight: bold !important;
+        font-size: 27px;
+    }
+    ul button{
+        width: 100px;
+        padding: 9px;
+        margin-top: 25%;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    
+    .d-md-none{
+        color: rgb(39, 2, 2);
+    }
+    
     .container{
         width: 93%;
         /* text-align: center; */
@@ -170,7 +208,7 @@ span{
     ul{
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
-        width: 500px;
+        width: 520px;
         height: 620px;
         background-color: rgb(182, 101, 101);
     }
@@ -235,7 +273,7 @@ span{
     }
     .d-md-flex{
         width: 100% !important;
-        margin: auto;
+        height: 100vh !important;
         margin-left: 20px !important;
     }
     @keyframes slide {
@@ -251,19 +289,27 @@ span{
 @media screen and (max-width: 550px) {
     .d-md-flex{
         border: 3px solid rgb(150, 72, 72);
-        height: 67vh !important;
+        height: 75vh !important;
+        width: 97% !important;
+        margin: auto;
     }
     .projectimg{
         width: 97%;
+        border-radius: 15px;
     }
     .projectdetails{
         font-size: 17px !important;
         line-height: 37px !important;
     }
-    /* .skillsimg, .cssicon{
-        height: 70px !important;
-        width: 70px;
-    } */
+    .contactdiv{
+        width: 100%;
+    }
+    input, textarea, .submitbtn{
+        width: 90% !important;
+        margin: auto;
+        border-radius: 20px;
+    }
+    textarea{border-radius: 8px !important;}
 }
 
 @media screen and (min-width: 900px) {
@@ -287,5 +333,15 @@ span{
     }
     #projects{
         margin-top: -100px !important;
+    }
+}
+@media screen and (max-width: 350px) {
+    .d-md-flex{
+        height: 71vh !important;
+        line-height: 50px;
+    }
+     .projectdetails{
+        line-height: 25px !important;
+        font-size: 14px !important;
     }
 }

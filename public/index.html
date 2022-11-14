@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+    <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body id="body">
+
+    <nav class="navbar navbar-expand-lg sticky-top py-2 container-fluid shadow-lg large-nav ">
+      <div class="container-fluid">
+        <a class="navbar-brand ps-5" href="#"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-5 m-1 float-end m-auto chai">
+            <li class="nav-item me-5">
+              <a href="#home" class="nav-link ">Home</a>
+            </li>
+            <li class="nav-item me-5">
+              <a href="#about" class="nav-link ">About</a>
+            </li>
+            <li class="nav-item me-5">
+              <a  href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item me-5">
+              <a  href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item me-5">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <button class = "px-3 mt-1">Resume</button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg sticky-top container-fluid shadow small-nav " id="smallnav">
+      <div class="container-fluid">
+        <a class="navbar-brand ps-5" href="#"></a>
+        <button class="navbar-toggler mt-" id="mytoggler" onclick="navToggler()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-5 m-1 float-end m-auto chai shadow-lg" id="mylinks">
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="mt-3">
+      <p class="d-md-none"> Lorem ipsum dolor sit  </p>
+    <div class="container">
+      <div class="col-lg-9">
+        <p class="unicolo text-white ms-lg-5 fs-4 mt-5 hi">Hi, my name is </p>
+        <h1 class=" ms-lg-5 mt-1 text-whit unicolor">Abdulmalik Salawu.</h1>
+        <h2 class="ms-lg-5 text-white unicolo">I build things for the web.</h2>
+        <p class="ms-lg-5 fs-4 unicolor description">I’m a fullstack developer, who is specialized in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, interactive, and  <span class="fs-3"> user-centered applications</span> on the web.</p>
+      </div>
+    </div>
+  </section>
+
+    <section id="about" class="container mt-5 issue">
+      <p class="d-md-none"> Lorem ipsum dolor sit amet consectetur,  </p>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 ms-lg-5 mt-lg-4">
+          <h3 class="unicolo ms- fw-bol mt-5">About me</h3><hr class="bg-white">
+          <p class="unicolor fs-5">Hello! My name is <span class="fs-3"> Abdulmalik</span>, and I enjoy creating things that live on the internet. My interest in web development started back in 2021 when I saw eye-catching website structures and designs  — turns out having a Computer Science student as a roomie taught me a lot about <span class="fs-3"> HTML & CSS!</span></p>
+          <p class="unicolor fs-5">Over the past few months, I have made a smooth learning transition from Biochemistry to fullstack development. My passion for technology also facilitated the switch. Fast-forward to today, and I'm currently a Level 3 student @ <span class="fs-3"> SQI College of ICT</span> in Oyo, Nigeria.</p>
+          <p class="unicolor fs-5 mb-5">I'm currently open to internship, junior frontend roles and also freelance work</p>
+        </div>
+          <img class="col-sm-10 col-md-5 mt-lg-5 mypic" src="IMG_20220930_094106_635.jpg" alt="">
+      </div>
+    </section>
+
+    <section id="skills" class="container mt-5 d-none d-md-block">
+       <h3 class="unicolor ms-5 mt-5">Skills</h3><hr class="w-50 ms-5">
+       <div class="row mt-5 imgcont">
+        <div class="col-md-3 col-lg-3">
+          <img src="html_icon-removebg-preview.png" class="skillsimg "  alt="">
+          <p class="ms-5 fs-4 unicolor">HTML</p>
+        </div>
+        <div class="col-md-3 col-lg-3">
+          <img src="css_icon-removebg-preview.png" class="skillsimg cssimg"  alt="">
+          <p class="ms-5 fs-4 unicolor">CSS</p>
+        </div>
+        <div class="col-md-3 col-lg-3">
+          <img src="js_icon-removebg-preview.png" class="skillsimg"  alt="">
+          <p class="ms-2 unicolor fs-4">JAVASCRIPT</p>
+        </div>
+        <div class="col-md-3 col-lg-1">
+          <img src="react_icon-removebg-preview.png" class="skillsimg" alt="">
+          <p class="ms-5 unicolor fs-4">REACT</p>
+        </div>
+       </div>
+
+       <div class="row">
+        <div class="col-md-3 col-lg-3">
+          <img src="firebase_icon-removebg-preview.png" class="skillsimg "  alt="">
+          <p class="ms-5 fs-4 unicolor">FIREBASE</p>
+        </div>
+        <div class="col-md-3 col-lg-3">
+          <img src="git_icon-removebg-preview.png" class="skillsimg"  alt="">
+          <p class="ms-5 fs-4 unicolor">GIT</p>
+        </div>
+        <div class="col-md-3 col-lg-3">
+          <img src="rwdicon.jpg" class="skillsimg"  alt="">
+          <p class="ms-2 unicolor fs-4">RESPONSIVE</p>
+        </div>
+        <div class="col-md-3 col-lg-1">
+          <img src="bootstrapicon-removebg-preview.png" class="skillsimg cssimg" alt="">
+          <p class="ms-2 unicolor fs-4">BOOTSTRAP</p>
+        </div>
+       </div>
+    </section>
+
+    <section id="myskills" class="container mt-5 d-md-none">
+      <h3 class="unicolor ms-3">Skills</h3><hr class="bg-white">
+        <div class="row mt-lg-4 ">
+          <div class="flexbox">
+            <div class="col-sm-4 col-lg-3">
+              <img src="html_icon-removebg-preview.png" class="skillsimg mt-2 ms-"  alt="">
+              <p class="fs-5 ms-4">HTML</p>
+            </div>
+            <div class="col-sm-4 col-lg-1 col-lg-3">
+              <img src="css_icon-removebg-preview.png" class="cssicon"  alt="">
+              <p class="fs-5 ms-5">CSS</p>
+            </div>
+          </div>
+          <div class="flexbox">
+            <div class="col-sm-6 col-lg-1 col-lg-">
+              <img src="js_icon-removebg-preview.png" class=" skillsimg"  alt="">
+              <p class="fs-5">JAVASCRIPT</p>
+            </div>
+            <div class="col-sm-6 col-lg-1 col-lg-">
+              <img src="react_icon-removebg-preview.png" class=" skillsimg me-3"  alt="">
+              <p class="fs-5 ms-3">REACT</p>
+            </div>
+        </div>
+
+        <div class="row mt-lg-4 ">
+          <div class="flexbox">
+            <div class="col-sm-4 col-lg-1 col-lg-3">
+              <img src="bootstrapicon-removebg-preview.png" class="cssicon w-75 ms-3"  alt="">
+              <p class="fs-5">BOOTSTRAP</p>
+            </div>
+            <div class="col-sm-4 col-lg-3">
+              <img src="firebase_icon-removebg-preview.png" class="skillsimg mt-2 ms-3"  alt="">
+              <p class="fs-5 ms-4">FIREBASE</p>
+            </div>
+          </div>
+          <div class="flexbox">
+            <div class="col-sm-6 col-lg-1 col-lg-3">
+              <img src="rwdicon.jpg" class=" skillsimg me-2"  alt="">
+              <p class="fs-5">RESPONSIVE</p>
+            </div>
+            <div class="col-sm-6 col-lg-1 col-lg-3">
+              <img src="git_icon-removebg-preview.png" class=" skillsimg me-"  alt="">
+              <p class="ms-4 fs-5">GIT</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+      <h3 class="unicolor ms-md-5 ps-4">Projects</h3><div class="ms-5"><hr class=" w-50 ms-lg-4"></div>
+      <div class="row container mt-5 ms-lg-5">
+        <div class="col-sm-10 col-md-12 col-lg-11 ms-md-5 fs-4 m-auto d-md-flex">
+            <div class="col-md-6">
+                <img class="projectimg" src="printisnap.PNG" alt="">
+            </div>
+            <div class="col-6 ">
+              <h4 class="fs-2 mt-3">Business Landing Page</h4>
+                <p class="unicolor fs-5 projectdetails
+                ">A platform that showcase basic client products. A landing page for a card-printing firm. Built a quick and responsive landing page for a client that was in an urgent need of a page. The site is responsive across all screen.</p>
+                  <button class="col-5 livesite"><a class="text-decoration-none text-black" href="https://maleekprintivo.netlify.app"> Live Site</a></button> 
+                  <button class="col-5 livesite"><a class="text-decoration-none text-black" href="">Repo</a></button>
+            </div>
+        </div>
+      </div>
+      
+      <div class="row container mt-5 ms-lg-5">
+        <div class="col-sm-10 col-md-12 col-lg-11 ms-md-5 fs-4 m-auto d-md-flex">
+            <div class="col-md-6">
+                <img class="projectimg" src="quizsnap.PNG" alt="">
+            </div>
+            <div class="col-6 ">
+              <h4 class="fs-2 mt-3">Quiz Application</h4>
+                <p class="unicolor fs-5 projectdetails
+                ">A quiz app inspired from the popular quiz show Who Wants to be a Millionaire, where users earn prize money based on the amount of correctly answered questions. A maximum time of 15secs for each. Check it out through the link below</p>
+                  <button class="col-5 livesite"><a class="text-decoration-none text-black" href="https://wwtbam-9b67f.web.app"> Live Site</a></button> 
+                  <button class="col-5 livesite"><a class="text-decoration-none text-black" href="https://github.com/AbdulmalikSalawu/Quiz-App">Repo</a></button>
+            </div>
+        </div>
+      </div>
+      
+      <div class="row container mt-5 ms-lg-5">
+        <div class="col-sm-10 col-md-12 col-lg-11 ms-md-5 fs-4 m-auto d-md-flex">
+            <div class="col-md-6">
+                <img class="projectimg" src="calcimg.PNG" alt="">
+            </div>
+            <div class="col-6 ">
+              <h4 class="fs-2 mt-3">Basic Calculator</h4>
+                <p class="unicolor fs-5 projectdetails
+                ">A simple calculator that does basic maths sum e.g. additon, subtraction, multiplication, and division. This was built as a means to solidify JavaScript basics.</p>
+                  <button class="col-5 livesite"><a class="text-decoration-none text-black" href="https://malik-calculator.netlify.app"> Live Site</a></button> 
+                  <button class="col-5 livesite"><a class="text-decoration-none text-black" href="https://github.com/AbdulmalikSalawu/Quiz-App">Repo</a></button>
+            </div>
+        </div>
+      </div>
+
+      <div class="row container mt-5 ms-lg-5">
+        <div class="col-sm-10 col-md-12 col-lg-11 ms-md-5 fs-4 m-auto d-md-flex">
+            <div class="col-md-6">
+                <img class="projectimg" src="animalpage.PNG" alt="">
+            </div>
+            <div class="col-6 ">
+              <h4 class="fs-2 mt-3">Animal Facts Generator</h4>
+                <p class="unicolor fs-5 projectdetails
+                ">A platform where random animal fact is generated whenever the user clicks the button. Facts such as lifespan, botanical name, diet, etc. I fetched data from an animal API and it was used to render the data on the browser.</p>
+                  <button class="col-5 livesite"><a class="text-decoration-none text-black" href="https://animal-checker.netlify.app"> Live Site</a></button> 
+                  <button class="col-5 livesite"><a class="text-decoration-none text-black" href="https://github.com/AbdulmalikSalawu/animal-checker">Repo</a></button>
+            </div>
+        </div>
+      </div>
+
+      <div class="row container mt-5 ms-lg-5">
+        <div class="col-sm-10 col-md-12 col-lg-11 ms-md-5 fs-4 m-auto d-md-flex">
+            <div class="col-md-6">
+                <img class="projectimg" src="grading.PNG" alt="">
+            </div>
+            <div class="col-6 ">
+              <h4 class="fs-2 mt-3">Grading System</h4>
+                <p class="unicolor fs-5 projectdetails
+                ">A grading system in which students can check their grade based on the score entered. A corresponding audio is also played based on the grade obtained.</p>
+                  <button class="col-5 livesite"><a class="text-decoration-none text-black" href="https://malik-grade.netlify.app"> Live Site</a></button> 
+                  <button class="col-5 livesite"><a class="text-decoration-none text-black" href="https://github.com/AbdulmalikSalawu/Grading-System">Repo</a></button>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container mt-5">
+      <h3 class="unicolor ms-3">Contact Me</h3><hr class="bg-white">
+      <div class="row">
+          <div class="col-sm-10 col-md-8 col-lg-6 ms-3 ms-md-5  contactdiv">
+            <input type="text" id="userName" class="col-8 py-2 mt-5 text-center fs-5 " placeholder="your name"><br>
+            <span class="text-center m-auto d-block" id="validateName"></span>
+            <input type="text" class="col-8 mt-4 py-2 text-center fs-5" id="userEmail" placeholder="your email"><br>
+            <span class="text-center m-auto d-block" id="validateEmail"></span>
+            <textarea name="" class="col-8 mt-4 text-center fs-5" id="userMessage" placeholder="message" ></textarea>
+            <span class="text-center m-auto d-block" id="validateMessage"></span>
+            <button class="col-8 mt-4 text-center rounded-pill fs-5 submitbtn py-2 fw-bold" id="sendMessage">Get in Touch</button>
+          </div>
+          <div class="col-lg-5 container px-3 text-center">
+            <p class="mt-5 fs-5 unicolor"> If you have anything for me, be it question or offer, feel free to reach out to me through this form and I will get back to you as soon as possible.</p> 
+            <p class="unicolor fs-5"> Also I'm available for collaborations. Reach out let's build something fun</p> 
+          </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+      import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
+     
+      const firebaseConfig = {
+        apiKey: "AIzaSyCbnDX63yQb7ojE_pxFkKUNbJdrHgcs7wU",
+        authDomain: "portfolio-fd0b3.firebaseapp.com",
+        databaseURL: "https://portfolio-fd0b3-default-rtdb.firebaseio.com",
+        projectId: "portfolio-fd0b3",
+        storageBucket: "portfolio-fd0b3.appspot.com",
+        messagingSenderId: "882122571016",
+        appId: "1:882122571016:web:6b77383a28163f221800bd",
+        measurementId: "G-0ZQHRJF9YL"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const db = getDatabase();
+
+      let feedbackid = 0;
+      let feedbackArray = [];
+
+      let feedbackDb = ref(db, "reviews");
+      onValue(feedbackDb, (snapshot)=> {
+        let feedbackArray = snapshot.val();
+        if(feedbackArray) {
+          feedbackid = feedbackArray.length
+        } else {
+          feedbackid = 0;
+        }
+      })
+      
+      document.getElementById("sendMessage").addEventListener("click", function(){
+        let username = userName.value;
+        let email = userEmail.value;
+        let message = userMessage.value;
+        let feedbackObj = {username, email, message};
+        if(username.length >=3 && email.length >=10 && message.length >1){
+          let dbRef = ref(db, `reviews/${feedbackid}`)
+          set (dbRef, feedbackObj);
+          userName.value = "", userEmail.value = "", userMessage.value = ""
+          validateName.innerHTML = "", validateEmail.innerHTML = "",
+          validateMessage.innerHTML = "Your message has been sent",
+          validateMessage.style.color = "green"
+        }
+          if(username.length <3){
+            validateName.innerHTML = "name must be up to 3 letters"
+            validateName.style.color = "red"
+          }
+          if(email.length <10) {
+              validateEmail.innerHTML = "invalid email"
+              validateEmail.style.color = "red"
+          }
+          if(message.length <2){
+            validateMessage.innerHTML = "message should be more than a character"
+            validateMessage.style.color = "red"
+          }
+      })
+
+    </script>
+  </body>
+</html>
