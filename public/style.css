@@ -9,6 +9,11 @@ body{
     background-color: rgb(39, 2, 2);
     overflow-x: hidden !important;
 }
+.top-pic{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
 hr{
     background-color: white;
     height: 3px;
@@ -19,11 +24,12 @@ hr{
 .large-nav{
     visibility: visible;
     /* background-color: rgb(39, 2, 2) !important; */
-    background-color: rgb(102, 39, 39);
+    background-color: rgb(211, 150, 150);
 }
 .nav-link{
     /* color: #8892b0; */
-    color: white;
+    color: rgb(24, 1, 1);
+    font-weight: bold;
     font-size: 20px;
 }
 .nav-link:hover{
@@ -49,6 +55,8 @@ hr{
 h1{
     font-size: 80px;
     color: #ccd6f6;
+}
+h2, h3{
     animation-name: slide;
     animation-duration: 1.2s;
     animation-iteration-count: 1;
@@ -56,10 +64,11 @@ h1{
 }
 .hi{
     animation-name: slide;
-    animation-duration: 2s;
+    animation-duration: 2.3s;
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
 }
+
 h2{
     color: #8892b0;
     font-size: 72px;
@@ -67,6 +76,11 @@ h2{
 .projectimg{
     height: 170px;
     width: 300px;
+}
+.more{
+    background-color: #042828;
+    border: thin solid white;
+    color: white;
 }
 @keyframes slide {
     0% {
@@ -76,7 +90,7 @@ h2{
         transform: translateX(105px)
     }
     75% {
-        transform: translateX(40px);
+        transform: translateX(70px);
     }
 }
 .container p{
@@ -86,10 +100,6 @@ h2{
 h3{
     color: rgb(247, 222, 222);
     font-size: 60px;
-    animation-name: slide;
-    animation-duration: 1.2s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-out;
 }
 span{
     color: #4d9e9e;
@@ -102,7 +112,7 @@ span{
     top: 100px;
 }
 .unicolor{
-    color: rgb(219, 180, 180);
+    color: rgb(228, 202, 202);
 }
 #skills .row{
     display: flex;
@@ -172,10 +182,16 @@ textarea{
         transform: scale(100%);
     }
 }
+.projectimg{border-radius: 15px;}
+.d-md-flex{
+    border: 2px solid rgb(182, 101, 101) ;
+    border-radius: 22px;
+}
 @media screen  and (max-width: 1000px) {
     .small-nav{
         display: block;
-        background-color: rgb(230, 185, 185);
+        background-color: rgb(233, 190, 190);
+        padding-top: 3px;
         padding-bottom: 3px;
     }
     .large-nav{
@@ -196,14 +212,14 @@ textarea{
         padding: 9px;
         margin-top: 25%;
     }
+    .inprogress{
+        font-size: 13px;
+    }
 }
-
-
 @media screen and (max-width:900px) {
     .d-md-none{
         color: rgb(39, 2, 2);
     }
-    
     .container{
         width: 93%;
         /* text-align: center; */
@@ -215,9 +231,9 @@ textarea{
         font-size: 29px;
     }
     .navbar-toggler{
-        border: medium solid rgb(150, 72, 72);
-        border: medium solid rgb(39, 2, 2);
-        border-radius: 8px;
+        border: thin solid rgb(24, 1, 1);
+        border-radius: 18px;
+        height: 40px;
     }
     .navbar-collapse{
        position: relative;
@@ -240,14 +256,14 @@ textarea{
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
         width: 500px;
-        height: 700px;
+        height: 650px;
         background-color: rgb(182, 101, 101);
     }
     ul li a{
         margin-left: 74%;
         text-align: center;
         color: rgb(39, 2, 2) !important;
-        margin-top: 55px;
+        margin-top: 48px;
         font-size: 24px !important;
         font-weight: bold !important;
     }
@@ -318,15 +334,34 @@ textarea{
 }
 
 @media screen and (max-width: 550px) {
+    .top-pic{
+        height: 52px;
+        width: 52px;
+    }
+    .fontreduce{
+        font-size: 15px !important;
+        line-height: 35px !important;
+    }
+    .fs-3{font-size: 18px !important;}
     .d-md-flex{
-        border: 3px solid rgb(150, 72, 72);
-        height: 102vh !important;
+        border: 1px solid rgb(150, 72, 72);
+        border-radius: 30px;
+        /* border: none !important; */
+        height: 105vh !important;
         width: 97% !important;
         margin: auto;
     }
-    .hi, .text-whit{
+    .description, .whatido{
         position: relative;
-        bottom: 50px;
+        bottom: 10px;
+    }
+    .hi{
+        position: relative;
+        bottom: 40px;
+    }
+    .text-whit{
+        position: relative;
+        bottom: 55px;
     }
     .projectimg{
         width: 97%;
@@ -355,11 +390,18 @@ textarea{
     .container div{
         height: 105vh;
     }
+    #skills{
+        margin-top: 150px !important;
+    }
     .imgcont{
         height: 36vh !important;
     }
     #myskills{
         margin-top: 150px !important;
+    }
+    .socialsimg{
+        position: relative;
+        bottom: 200px !important;
     }
 }
 
@@ -382,11 +424,16 @@ textarea{
         width: 400px;
     }
     .d-md-flex{
-        height: 97vh !important;
+        height: 106vh !important;
         line-height: 50px;
     }
      .projectdetails{
         line-height: 25px !important;
         font-size: 14px !important;
     }
+}
+.repo{
+    background-color: rgb(15, 0, 0) !important;
+    border: thin solid rgb(211, 150, 150) !important;
+    color: white !important;
 }
