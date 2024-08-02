@@ -19,6 +19,10 @@ body{
 .projectTopic{
     color: #64ffda;
 }
+.beneath{
+    position: relative;
+    bottom: 25rem !important;
+}
 .works{
     background-color: #0A192f;
     height: 2.5rem;
@@ -315,8 +319,8 @@ textarea{
         top: -20px;
     }
     .skillsimg{
-        height: 90px;
-        width: 100px;
+        height: 70px;
+        width: 80px;
     }
     .cssicon{
         height: 100px;
